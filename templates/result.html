@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Prediction</h1>
+    </div>
+     {% if result == 0 %}
+         <div class="zero">
+             <h1>It is a valid Bank Note</h1>
+         </div>
+     {% else %}
+         <div class="one">
+             <p>It is not a valid Bank Note</p>
+         </div>
+     {% endif %}
+</body>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+        background-color:#000000c5; 
+        font-family: sans-serif;
+    }
+    .header {
+        margin: 10px;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        font-weight: bolder;
+        background-color:  rgb(147, 158, 147);
+        padding: 2px;
+        font-family: sans-serif;
+    }
+    .zero{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 20px;
+    }
+    .one{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 50px;
+       }
+</style>
+</html>

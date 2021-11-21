@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>simple</title>
+        <style>
+            body{
+                margin: 0;  
+                padding: 0;  
+                background-color:#000000c5;  
+                font-family: sans-serif;  
+            }
+        #box
+        {
+            position: absolute;
+            border: 5px solid rgba(117, 101, 101, 0.062);
+            border-radius: 2%;
+            width: 500px;
+            height: 350px;
+            margin-left: 50%;
+            margin-top: 15%;
+            align-content: center;
+            transform: translate(-50%,-50%);
+            background-color: rgba(84, 85, 84, 0.541);
+            background-blend-mode: soft-light;
+            text-align: center;
+        }
+
+        #header{
+                align-items: center;
+                background-color: rgb(197, 109, 178);
+                color: black;
+                padding: 10px;
+                text-align: center;
+                align-content: center;
+                
+            }
+        .form{  
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background: #23463f;  
+        border-radius: 15px ; 
+        align-content:center; 
+          
+        }  
+        label{  
+        color: #08ffd1;  
+         font-size: 17px; 
+        }
+        #a{
+        text-decoration: none;
+            margin-top: 100px;
+             width: 150px;  
+            height: 30px;  
+             border: none;  
+             border-radius: 3px;  
+            padding-left: 3;
+        }
+        #b{  
+             width: 150px;  
+            height: 30px;  
+             border: none;  
+             border-radius: 3px;  
+            padding-right: 3px;  
+            margin-left: 50px;
+        }
+        #c{  
+            margin-top: 20px;
+             width: 150px;  
+            height: 30px;  
+             border: none;  
+             border-radius: 3px;  
+            padding-left: 3px;  
+        }
+
+        #d{  
+             width: 150px;  
+            height: 30px;  
+             border: none;  
+             border-radius: 3px;  
+           margin-left: 50px;  
+        }
+        #e{  
+             width: 100px;  
+            height: 30px;  
+             border: none;  
+             border-radius: 3px;  
+            padding-left: 3px;  
+            margin-top: 50px;
+            font-size: large;
+            font-family: sans-serif;
+        }
+        #e:hover{
+
+            background-color: rgb(41, 38, 38);
+            transition: 0.5s;
+            color: white;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <br>
+        
+       <h1 id="header">BANK NOTES AUTHENTICATION</h1>
+            <div id="box">
+            <form id="form" action="/predict" method="POST">
+
+            <input type="text" name="Variance" id="a" placeholder="Variance"/>
+
+            <input type="text" name="Skewness"  id="b" placeholder="Skewness"/>
+                
+            
+                <br>
+                <br>
+           
+                <input type="text" name="Curtosis"  id="c" placeholder="Curtosis"/>
+                <input type="text" name="Entropy"  id="d" placeholder="Entropy"/>
+                <br>
+                <br>
+   
+               <input type="submit" value="predict"  id="e" placeholder="submit" />
+        
+            </form>
+        </div>
+    </body>
+</html>
