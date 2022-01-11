@@ -1,2 +1,2 @@
 # Bank-Note-Authentication
-A machine learning web app built to authenticate bank notes 
+Please Check the master branch for code
